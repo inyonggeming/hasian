@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="tes.css">
+  <title>SIAN CO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background-color: #995405;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      background-color: ;
+    }
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product-card h3 {
+      margin: 10px 0 5px;
+    }
+    .product-card p {
+      color: #555;
+    }
+    .product-card .price {
+      font-weight: bold;
+      color: #b86b14;
+      margin-top: 10px;
+    }
+    .product-card button {
+      margin-top: 10px;
+      padding: 10px;
+      background: #b86b14;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .product-card button:hover {
+      background: #45a049;
+    }
+
+    /* === SLIDESHOW CSS === */
+    #slideshow {
+      width: 1000px;
+      max-height: 1000px;
+      overflow: hidden;
+      position: relative;
+      margin-top: 10px;
+    }
+
+    #slideshow img {
+      width: 2000px;
+      height: 3000px;
+      object-fit: cover;
+      display: block;
+    }
+    h1{
+      color: rgb(189, 10, 10);
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <img src="top.png" alt="Burger King Logo" class="logo">
+  <nav>
+      <ul>
+          <li><strong>SIAN-CO</strong><br>Siallangon Corner</li>
+      </ul>
+  </nav>
+  <div class="nav-icons">
+      <a href="#" class="cart">🛒</a>
+  </div>
+</header>
+
+<!-- === SLIDESHOW MULAI DI SINI === -->
+<div id="slideshow">
+  <img id="gambar" src="1.jpg" alt="Slide">
+</div>
+<!-- === SLIDESHOW SELESAI === -->
+<center><h1>MENU </h1></center>
+<div class="container">
+  <div class="product-card">
+    <img src="1.jpg" alt="Produk 1">
+    <h3>Boba</h3>
+    <p>Kue lembut dengan coklat Belgia asli.</p>
+    <div class="price">Rp10.000</div>
+    <button>Beli Sekarang</button>
+  </div>
+
+  <div class="product-card">
+    <img src="2.jpg" alt="Produk 2">
+    <h3>Burger</h3>
+    <p>mantap man</p>
+    <div class="price">Rp15.000</div>
+    <button>Beli Sekarang</button>
+  </div>
+
+  <div class="product-card">
+    <img src="4.jpg" alt="Produk 3">
+    <h3>Kebab</h3>
+    <p>hidup jokowi</p>
+    <div class="price">Rp15.000</div>
+    <button>Beli Sekarang</button>
+  </div>
+  
+  
+</div>
+<div class="container">
+  <div class="product-card">
+    <img src="1.jpg" alt="Produk 1">
+    <h3>Boba</h3>
+    <p>Kue lembut dengan coklat Belgia asli.</p>
+    <div class="price">Rp10.000</div>
+    <button>Beli Sekarang</button>
+  </div>
+
+  <div class="product-card">
+    <img src="2.jpg" alt="Produk 2">
+    <h3>Burger</h3>
+    <p>mantap man</p>
+    <div class="price">Rp15.000</div>
+    <button>Beli Sekarang</button>
+  </div>
+
+  <div class="product-card">
+    <img src="4.jpg" alt="Produk 3">
+    <h3>Kebab</h3>
+    <p>hidup jokowi</p>
+    <div class="price">Rp15.000</div>
+    <button>Beli Sekarang</button>
+  </div>
+  
+  
+</div>
+  
+<!-- === JAVASCRIPT SLIDESHOW === -->
+<script>
+  const gambarList = [
+    "slide1.png",
+    "slide2.png",
+    "slide3.png"
+  ];
+
+  let index = 0;
+  const gambar = document.getElementById("gambar");
+
+  setInterval(() => {
+    index = (index + 1) % gambarList.length;
+    gambar.src = gambarList[index];
+  }, 3000); // Ganti gambar setiap 3 detik
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('background.jpg') rgba(0, 190, 255, 0.6); /* bisa diganti background gambar asli */
+    background-blend-mode: overlay;
+    padding: 10px 40px;
+    height: 100px;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  .logo p {
+    margin: 0;
+    font-size: 12px;
+    color: red;
+    text-align: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-left: 25px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a.active,
+  .menu a:hover {
+    color: yellow;
+  }
+  

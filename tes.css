@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav ul li {
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav-icons a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cart {
+    font-size: 20px;
+}
+
+.hero {
+    background: #4b2c1c url('https://i.imgur.com/d19Se7Z.png') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.item img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.middle {
+    text-align: center;
+}
+
+.middle .baru {
+    background-color: yellow;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.middle h1 {
+    font-size: 40px;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.disclaimer {
+    font-size: 12px;
+    margin-top: 30px;
+}
+#slideshow {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  #slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
